@@ -7,14 +7,15 @@ import {
 } from "react-admin";
 import { dataProvider } from "./dataProvider";
 
+
 export const App = () => (
   <Admin dataProvider={dataProvider}>
-    <Resource
+    {/* <Resource
       name="contact"
       list={ListGuesser}
       edit={EditGuesser}
       show={ShowGuesser}
-    />
+    /> */}
     <Resource
       name="newsletter"
       list={ListGuesser}
