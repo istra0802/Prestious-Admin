@@ -7,8 +7,7 @@ import {
 } from "react-admin";
 import { dataProvider } from "./dataProvider";
 import UserList from "./screens/contact";
-{console.log("dataProvider",dataProvider)
-    }
+{console.log("dataProvider",dataProvider)}
 export const App = () => (
   <Admin dataProvider={dataProvider}>
     
@@ -17,6 +16,7 @@ export const App = () => (
       list={UserList}
       edit={EditGuesser}
       show={ShowGuesser}
+      
 />
     <Resource
       name="newsletter"
