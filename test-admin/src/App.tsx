@@ -6,13 +6,15 @@ import {
   ShowGuesser,
 } from "react-admin";
 import { dataProvider } from "./dataProvider";
-
-
+import UserList from "./screens/contact";
+{console.log("dataProvider",dataProvider)
+    }
 export const App = () => (
   <Admin dataProvider={dataProvider}>
-    {/* <Resource
-      name="contact"
-      list={ListGuesser}
+    
+    <Resource
+      name="user"
+      list={UserList}
       edit={EditGuesser}
       show={ShowGuesser}
     /> */}
