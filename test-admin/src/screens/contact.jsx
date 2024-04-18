@@ -1,6 +1,6 @@
-import React from "react";
+
 import { List, Datagrid, TextField, EmailField, NumberField } from "react-admin";
-import { dataProvider } from "../dataProvider";
+
 
 const UserList = (props) => (
   <List {...props}>

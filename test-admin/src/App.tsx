@@ -17,7 +17,7 @@ export const App = () => (
       list={UserList}
       edit={EditGuesser}
       show={ShowGuesser}
-    /> */}
+/>
     <Resource
       name="newsletter"
       list={ListGuesser}
