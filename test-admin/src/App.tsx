@@ -22,12 +22,10 @@ export const App = () => {
       try {
         const response = await fetch("http://localhost:8000/api/users/newuser");
         const data = await response.json();
-
-        console.log("count is th data that is coming ", data);
-
-        setNewUsersCount((data.count) - newUsersCount);
-        // console.log(newUsersCount,"rrr")
+        const newlyAddedUsers = data.count - prevUsersCount;
+        setNewUsersCount(newlyAddedUsers);
         setPrevUsersCount(data.count);
+        console.log("New users count:", newlyAddedUsers); // Log the count of newly added users
       } catch (error) {
         console.log("Error fetching new users count:", error);
       } 

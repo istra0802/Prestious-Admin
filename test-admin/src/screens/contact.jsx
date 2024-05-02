@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { List, Datagrid, TextField, EmailField, NumberField, useNotify } from "react-admin";
+import { PostPagination } from "../common/MyPagination";
 
 const UserList = ({ newUsersCount, ...props }) => {
 

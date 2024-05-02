@@ -20,7 +20,7 @@ export const dataProvider: DataProvider = {
     return httpClient(url)
         .then(({ headers, json }) => ({
             data: Array.isArray(json?.data) ? json?.data : [], // Ensure json is an array
-            total: parseInt((headers.get('x-total-count') || "0").split('/').pop() || '0', 10),
+            total: parseInt((headers.get('x-total-count') || "0").split('/').pop() || '0',10),
         }))
         .catch(error => {
             console.error("Error fetching data:", error);
